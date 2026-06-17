@@ -60,6 +60,14 @@ pelo número correto.
 2. Use nomes simples, sem acentos e sem espaços. Exemplo: `ambiente-clinica.webp`.
 3. No `lib/manifest.js`, atualize o caminho da imagem quando for galeria.
 
+## Como trocar a logo
+
+A logo atual fica em:
+
+`assets/img/logo-my-eden.webp`
+
+Se precisar trocar, salve a nova logo com esse mesmo nome. Para manter o visual do site, use uma imagem quadrada, de preferência com fundo nude/rosado parecido com a identidade da marca.
+
 Para fotos reais de antes/depois, use a parte `gallery`.
 
 Um item só aparece no site quando estiver assim:
