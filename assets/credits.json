@@ -1,0 +1,40 @@
+{
+  "images": [
+    {
+      "file": "hero-spa-refugio.webp",
+      "title": "a restful, well-lighted space",
+      "creator": "woodleywonderworks",
+      "source": "Flickr via Openverse",
+      "license": "CC BY 2.0",
+      "license_url": "https://creativecommons.org/licenses/by/2.0/",
+      "foreign_landing_url": "https://www.flickr.com/photos/wwworks/2638509964"
+    },
+    {
+      "file": "about-ambiente.webp",
+      "title": "Indoor Spa - The Cliff Bay",
+      "creator": "PortoBay Trade",
+      "source": "Flickr via Openverse",
+      "license": "CC BY 2.0",
+      "license_url": "https://creativecommons.org/licenses/by/2.0/",
+      "foreign_landing_url": "https://www.flickr.com/photos/portobayevents/3254755265"
+    },
+    {
+      "file": "about-cuidado.webp",
+      "title": "a restful, well-lighted space",
+      "creator": "woodleywonderworks",
+      "source": "Flickr via Openverse",
+      "license": "CC BY 2.0",
+      "license_url": "https://creativecommons.org/licenses/by/2.0/",
+      "foreign_landing_url": "https://www.flickr.com/photos/wwworks/2638509964"
+    },
+    {
+      "file": "placeholder-manicure.webp",
+      "title": "unhas decoradas nails",
+      "creator": "monibela",
+      "source": "Flickr via Openverse",
+      "license": "CC BY 2.0",
+      "license_url": "https://creativecommons.org/licenses/by/2.0/",
+      "foreign_landing_url": "https://www.flickr.com/photos/monibela/3347097425"
+    }
+  ]
+}
