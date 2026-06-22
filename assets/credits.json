@@ -1,40 +1,71 @@
 {
-  "images": [
+  "notes": "As imagens dos serviços são ilustrações fotográficas geradas por IA e fornecidas para esta prévia. Podem ser substituídas por fotos reais da My Éden mantendo os mesmos nomes de arquivo.",
+  "items": [
     {
-      "file": "hero-spa-refugio.webp",
-      "title": "a restful, well-lighted space",
-      "creator": "woodleywonderworks",
-      "source": "Flickr via Openverse",
-      "license": "CC BY 2.0",
-      "license_url": "https://creativecommons.org/licenses/by/2.0/",
-      "foreign_landing_url": "https://www.flickr.com/photos/wwworks/2638509964"
+      "file": "assets/img/hero-clinica-boutique.webp",
+      "title": "Ambiente boutique claro",
+      "type": "placeholder gerado localmente",
+      "credit": "Template"
     },
     {
-      "file": "about-ambiente.webp",
-      "title": "Indoor Spa - The Cliff Bay",
-      "creator": "PortoBay Trade",
-      "source": "Flickr via Openverse",
-      "license": "CC BY 2.0",
-      "license_url": "https://creativecommons.org/licenses/by/2.0/",
-      "foreign_landing_url": "https://www.flickr.com/photos/portobayevents/3254755265"
+      "file": "assets/img/sobre-consulta-delicada.webp",
+      "title": "Consulta delicada sem identificação",
+      "type": "placeholder gerado localmente",
+      "credit": "Template"
     },
     {
-      "file": "about-cuidado.webp",
-      "title": "a restful, well-lighted space",
-      "creator": "woodleywonderworks",
-      "source": "Flickr via Openverse",
-      "license": "CC BY 2.0",
-      "license_url": "https://creativecommons.org/licenses/by/2.0/",
-      "foreign_landing_url": "https://www.flickr.com/photos/wwworks/2638509964"
+      "file": "assets/img/placeholder-facial.webp",
+      "title": "Composição de cuidado facial",
+      "type": "placeholder gerado localmente",
+      "credit": "Template"
     },
     {
-      "file": "placeholder-manicure.webp",
-      "title": "unhas decoradas nails",
-      "creator": "monibela",
-      "source": "Flickr via Openverse",
-      "license": "CC BY 2.0",
-      "license_url": "https://creativecommons.org/licenses/by/2.0/",
-      "foreign_landing_url": "https://www.flickr.com/photos/monibela/3347097425"
+      "file": "assets/img/placeholder-bem-estar.webp",
+      "title": "Composição de beleza e bem-estar",
+      "type": "placeholder gerado localmente",
+      "credit": "Template"
+    },
+    {
+      "file": "assets/img/placeholder-corporal.webp",
+      "title": "Composição abstrata de cuidado corporal",
+      "type": "placeholder gerado localmente",
+      "credit": "Template"
+    },
+    {
+      "file": "assets/img/services/limpeza-de-pele.webp",
+      "title": "Atendimento de limpeza de pele",
+      "type": "imagem gerada por IA",
+      "credit": "Fornecida pela cliente"
+    },
+    {
+      "file": "assets/img/services/tratamento-de-estrias.webp",
+      "title": "Atendimento para tratamento de estrias",
+      "type": "imagem gerada por IA",
+      "credit": "Fornecida pela cliente"
+    },
+    {
+      "file": "assets/img/services/botox.webp",
+      "title": "Aplicação de toxina botulínica",
+      "type": "imagem gerada por IA",
+      "credit": "Fornecida pela cliente"
+    },
+    {
+      "file": "assets/img/services/reducao-de-medidas.webp",
+      "title": "Atendimento para redução de medidas",
+      "type": "imagem gerada por IA",
+      "credit": "Fornecida pela cliente"
+    },
+    {
+      "file": "assets/img/services/drenagem.webp",
+      "title": "Atendimento de drenagem",
+      "type": "imagem gerada por IA",
+      "credit": "Fornecida pela cliente"
+    },
+    {
+      "file": "assets/img/services/manicure.webp",
+      "title": "Atendimento de manicure",
+      "type": "imagem gerada por IA",
+      "credit": "Fornecida pela cliente"
     }
   ]
 }

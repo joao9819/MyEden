@@ -1,126 +1,62 @@
-# My Éden Clínica Estética - site estático
+# Site estático · My Éden
 
-Este site foi feito para funcionar por duplo clique no `index.html` e também para subir na Hostinger arrastando a pasta inteira.
+Este site foi feito para subir na Hostinger arrastando a pasta inteira. Ele também abre com duplo clique no arquivo `index.html`.
 
-## Como ver o site
+## Como abrir
 
-1. Abra a pasta `my-eden-clinica-estetica`.
+1. Abra a pasta `clinica-estetica-ribeirao-preto`.
 2. Dê duplo clique em `index.html`.
-3. Se algo parecer desatualizado depois de editar, aperte `Ctrl + F5` no navegador.
-
-## Como subir na Hostinger
-
-1. Entre no Gerenciador de Arquivos da Hostinger.
-2. Abra a pasta pública do domínio, normalmente `public_html`.
-3. Envie todos os arquivos e pastas de `my-eden-clinica-estetica` para dentro de `public_html`.
-4. O arquivo principal precisa ficar como `public_html/index.html`.
-
-Não precisa instalar npm, rodar build, configurar servidor ou usar terminal.
+3. Para publicar, envie todos os arquivos e pastas para a Hostinger: `index.html`, `.htaccess`, `css`, `js`, `lib` e `assets`.
 
 ## O que editar no Bloco de Notas
 
-O arquivo principal de edição é:
+Abra `lib/manifest.js`. Quase tudo que a cliente precisa trocar está ali:
 
-`lib/manifest.js`
+- `brand.name`: nome da profissional ou da clínica.
+- `brand.profession`, `brand.register`, `brand.experience`: textos exibidos no bloco de credibilidade.
+- `contact.whatsappNumber`: número em formato internacional, sem espaços. Exemplo: `5516999999999`.
+- `contact.displayPhone`: número como aparece no site.
+- `contact.instagramHandle` e `contact.instagramUrl`: Instagram.
+- `contact.address`, `contact.mapQuery`, `contact.hours`: endereço, busca do mapa e horário.
+- `services`: nome, problema, solução e mensagem de WhatsApp de cada serviço.
+- `reviews`: avaliações exibidas no site.
+- `gallery`: coloque as fotos em `assets/img/`, informe o caminho no campo `image` e marque `consentimento: true` somente quando houver autorização do paciente.
 
-Nele você altera:
+## Importante sobre WhatsApp
 
-- Nome, tagline e Instagram.
-- Nota do Google e quantidade de avaliações.
-- WhatsApp.
-- Endereço, horário e mapa.
-- Nome e registro do profissional responsável.
-- Tratamentos.
-- Avaliações reais do Google.
-- Galeria de resultados.
+O número também aparece no `index.html` como segurança para o site funcionar mesmo se o JavaScript não carregar. Depois de trocar o WhatsApp no `manifest.js`, procure por `5516999999999` no `index.html` e substitua pelo número correto.
 
-Salve o arquivo mantendo o nome `manifest.js`.
+## Trocar fotos
 
-## Como trocar o WhatsApp
+Coloque as novas imagens em `assets/img/`. Prefira arquivos `.webp`. Se usar `.jpg` ou `.png`, escreva o nome completo no `manifest.js`.
 
-No arquivo `lib/manifest.js`, procure:
+As imagens dos serviços ficam em `assets/img/services/` e podem ser trocadas mantendo os mesmos nomes. Não publique resultados de procedimentos estéticos sem confirmar as regras do conselho profissional e sem consentimento formal do paciente.
 
-`whatsappNumber: "55XXXXXXXXXXX"`
+## Antes de publicar, preencher os dados reais
 
-Troque por somente números, com DDI e DDD.
+1. Abra `lib/manifest.js` no Bloco de Notas.
+2. Troque `contact.whatsappNumber` e `contact.displayPhone` pelo WhatsApp real. No `index.html`, procure por `5516999999999` e substitua pelo mesmo número.
+3. Confirme os depoimentos, a nota e o número real de avaliações do Google e atualize os textos correspondentes.
+4. Preencha o endereço completo e o horário de atendimento em `contact.address` e `contact.hours`.
+5. Inclua no conteúdo institucional o nome, registro ou CRM e a experiência do profissional responsável, especialmente para o Botox.
+6. Preencha `brand.googleProfileUrl` com o link correto do perfil da My Éden no Google.
+7. Troque as imagens em `assets/img/services/` pelas fotos reais dos serviços, mantendo os mesmos nomes de arquivo.
+8. Para publicar fotos na galeria, coloque os arquivos em `assets/img/`, atualize o campo `image` e marque `consentimento: true` somente com autorização formal.
 
-Exemplo:
+## Antes/depois e conformidade
 
-`whatsappNumber: "5516999999999"`
+As regras exatas de antes/depois dependem do conselho da profissional:
 
-Importante: por segurança, o `index.html` também tem links básicos de WhatsApp para o site continuar funcionando se o JavaScript falhar. Depois de trocar o número no manifesto, use o localizar do Bloco de Notas no `index.html` e substitua:
+- Médicos: verificar CFM, incluindo Resolução 2.336/2023.
+- Biomédicos, enfermeiros, esteticistas e outras categorias: verificar as normas do conselho correspondente.
 
-`55XXXXXXXXXXX`
+Antes de publicar fotos de procedimentos de saúde, confirme as normas do conselho e tenha termo de consentimento de cada paciente. Não use linguagem como “resultado garantido”, “cura”, “sem dor”, “sem riscos”, “efeito imediato” ou “satisfação garantida”. Todo CTA deve convidar para avaliação.
 
-pelo número correto.
+## Se algo não atualizar
 
-## Como trocar fotos
+1. Aperte `Ctrl + F5` no navegador.
+2. Se ainda assim o arquivo antigo aparecer, troque o número de versão no `index.html`. Procure `?v=20260618-5` e altere para uma versão mais recente.
 
-1. Coloque as fotos novas dentro da pasta `assets/img`.
-2. Use nomes simples, sem acentos e sem espaços. Exemplo: `ambiente-clinica.webp`.
-3. No `lib/manifest.js`, atualize o caminho da imagem quando for galeria.
+## Bibliotecas locais
 
-Para fotos reais de antes/depois, use a parte `gallery`.
-
-Um item só aparece no site quando estiver assim:
-
-```js
-active: true,
-placeholder: false,
-consentimento: true,
-```
-
-Se `consentimento` estiver `false`, a foto não aparece.
-
-## Como colocar avaliações reais do Google
-
-No `lib/manifest.js`, procure `reviews`.
-
-Para cada avaliação:
-
-1. Cole o texto real copiado do Google.
-2. Coloque o nome ou inicial da pessoa.
-3. Mantenha a nota em `rating: 5` ou ajuste se for diferente.
-4. Troque `active: false` para `active: true`.
-
-Não invente avaliações.
-
-## Como atualizar nota, endereço e mapa
-
-No `lib/manifest.js`, confirme e altere:
-
-- `googleRating`
-- `googleReviews`
-- `googleProfileUrl`
-- `address`
-- `hours`
-- `mapsEmbedUrl`
-
-Para o mapa, abra o Google Maps, busque o endereço correto, use a opção de incorporar mapa e copie o link do iframe. Cole somente o valor do `src` em `mapsEmbedUrl`.
-
-## Se a alteração não aparecer
-
-1. Aperte `Ctrl + F5`.
-2. Se ainda não aparecer, abra o `index.html` e troque os finais `?v=20260617` por uma nova data. Exemplo: `?v=20260618`.
-3. Faça o mesmo nos arquivos `styles.css`, `lib/manifest.js` e `lib/main.js` quando forem citados no `index.html`.
-
-## Nota de conformidade
-
-As regras exatas de antes/depois e divulgação de injetáveis dependem do conselho dos profissionais envolvidos, como CFM para médicos e demais conselhos para profissionais não médicos. Confirme as normas aplicáveis antes de publicar.
-
-Antes de publicar qualquer foto de cliente:
-
-- Tenha termo de consentimento.
-- Use imagem natural, sem edição que altere resultado.
-- Evite promessa, comparação sensacionalista ou garantia.
-- Lembre que resultados variam de pessoa para pessoa.
-
-Botox/toxina botulínica deve ser divulgado com sobriedade e realizado por profissional habilitado, mediante avaliação individual.
-
-## Imagens placeholder
-
-As imagens atuais são placeholders de fontes abertas via Openverse. Os créditos ficam em:
-
-`assets/credits.json`
-
-Substitua pelas fotos reais da clínica antes da publicação final, sempre que possível.
+O site carrega as builds oficiais locais do GSAP 3.15.0 e ScrollTrigger 3.15.0 em `lib/gsap.min.js` e `lib/ScrollTrigger.min.js`.

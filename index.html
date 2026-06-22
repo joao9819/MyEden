@@ -3,305 +3,465 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>My Éden Clínica Estética | Ribeirão Preto</title>
-    <meta name="description" content="My Éden Clínica Estética em Ribeirão Preto. Tratamentos faciais, corporais, injetáveis e bem-estar com avaliação individual e agendamento pelo WhatsApp.">
-    <meta name="theme-color" content="#F5F1E8">
-    <link rel="preload" as="image" href="assets/img/hero-spa-refugio.webp?v=20260617">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT,WONK@9..144,400..760,70,0..1&family=Marcellus&family=Mulish:wght@400;500;600;700;800&display=swap&v=20260617">
-    <link rel="stylesheet" href="styles.css?v=20260617">
-    <script defer src="lib/gsap.min.js?v=20260617"></script>
-    <script defer src="lib/ScrollTrigger.min.js?v=20260617"></script>
-    <script defer src="lib/manifest.js?v=20260617"></script>
-    <script defer src="lib/main.js?v=20260617"></script>
+    <meta name="format-detection" content="telephone=no">
+    <meta
+      name="description"
+      content="My Éden oferece cuidados faciais, corporais e de beleza em Ribeirão Preto. Agende uma avaliação pelo WhatsApp."
+    >
+    <title>My Éden | Estética e beleza em Ribeirão Preto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500&family=Jost:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="css/styles.css?v=20260618-5">
   </head>
   <body>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
     <div class="splash" id="splash" aria-hidden="true">
       <div class="splash__inner">
-        <svg class="splash__leaf" viewBox="0 0 180 180" role="img" aria-label="">
-          <path d="M92 154 C82 119 77 81 101 45" />
-          <path d="M94 118 C72 115 52 103 39 83 C66 78 86 88 96 105" />
-          <path d="M99 92 C121 89 139 76 149 55 C124 52 105 63 98 82" />
-          <path d="M87 140 C62 139 43 128 30 110 C57 106 77 116 87 132" />
+        <svg class="splash__mark" viewBox="0 0 560 170" role="img" aria-label="My Éden">
+          <path d="M35 124 C92 24, 168 24, 218 102 S340 168, 401 78 S505 42, 533 112" />
+          <text x="50%" y="47%" text-anchor="middle">My Éden</text>
         </svg>
-        <p>MY ÉDEN</p>
-        <span></span>
+        <span class="splash__line"></span>
       </div>
     </div>
 
-    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
-
     <header class="site-header" data-header>
-      <a class="brand-mark" href="#topo" aria-label="Ir para o início">
-        <span>My Éden</span>
+      <a class="brand" href="#topo" aria-label="Voltar ao topo">
+        <span class="brand__name" data-brand-name>My Éden</span>
+        <span class="brand__meta">Ribeirão Preto</span>
       </a>
-      <nav class="main-nav" id="mainNav" aria-label="Navegação principal">
-        <a href="#tratamentos">Tratamentos</a>
-        <a href="#depoimentos">Depoimentos</a>
-        <a href="#resultados">Resultados</a>
-        <a href="#clinica">A clínica</a>
-        <a href="#localizacao">Localização</a>
-      </nav>
-      <a class="header-cta" data-whatsapp data-message="Olá! Vim pelo site e gostaria de agendar uma avaliação." href="https://wa.me/55XXXXXXXXXXX?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o.">Agendar</a>
-      <button class="nav-toggle" type="button" aria-label="Abrir menu" aria-controls="mainNav" aria-expanded="false" data-nav-toggle>
+
+      <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" data-menu-toggle>
         <span></span>
         <span></span>
       </button>
+
+      <nav class="nav" aria-label="Navegação principal" data-nav>
+        <a href="#servicos">Serviços</a>
+        <a href="#avaliacoes">Avaliações</a>
+        <a href="#resultados">Resultados</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#localizacao">Localização</a>
+      </nav>
+
+      <a
+        class="nav-cta"
+        href="https://wa.me/5516999999999?text=Ol%C3%A1%21%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o."
+        target="_blank"
+        rel="noopener"
+        data-wa="general"
+      >Agendar</a>
     </header>
 
-    <div class="side-signature" aria-hidden="true">RIBEIRÃO PRETO · @MYEDENRP</div>
+    <aside class="side-rail" aria-hidden="true">
+      <span>Ribeirão Preto · Nota 5,0 ★</span>
+    </aside>
 
     <main id="conteudo">
-      <section class="hero" id="topo" aria-label="My Éden Clínica Estética">
-        <div class="hero__media">
-          <img src="assets/img/hero-spa-refugio.webp?v=20260617" alt="Ambiente sereno com poltronas, luz natural e jardim ao fundo">
+      <section class="hero" id="topo">
+        <div class="hero__media" aria-hidden="true">
+          <img src="assets/img/hero-clinica-boutique.webp" alt="">
         </div>
-        <div class="hero__veil"></div>
-        <svg class="botanic-corner botanic-corner--left" viewBox="0 0 180 180" aria-hidden="true">
-          <path d="M24 162 C33 119 49 78 90 33" />
-          <path d="M48 111 C33 98 28 78 36 55 C59 69 66 87 58 107" />
-          <path d="M74 75 C74 51 87 35 112 25 C114 55 101 72 79 82" />
-        </svg>
-        <svg class="botanic-corner botanic-corner--right" viewBox="0 0 180 180" aria-hidden="true">
-          <path d="M156 18 C147 61 131 102 90 147" />
-          <path d="M132 69 C147 82 152 102 144 125 C121 111 114 93 122 73" />
-          <path d="M106 105 C106 129 93 145 68 155 C66 125 79 108 101 98" />
-        </svg>
-
+        <div class="hero__veil" aria-hidden="true"></div>
         <div class="hero__content">
-          <p class="kicker reveal">Clínica Estética & Bem-estar · Ribeirão Preto</p>
-          <h1 class="hero__title reveal">My Éden</h1>
-          <p class="hero__tagline reveal">Seu refúgio de beleza e bem-estar.</p>
-          <div class="hero__proof reveal" aria-label="Avaliação no Google">
+          <p class="kicker reveal">Estética · Ribeirão Preto</p>
+          <h1 class="hero__title reveal" data-brand-name>My Éden</h1>
+          <p class="hero__subtitle reveal">
+            Cuidados faciais, corporais e de beleza em Ribeirão Preto
+          </p>
+          <div class="rating-badge reveal" aria-label="Nota 5,0 no Google com 26 avaliações">
             <span class="stars" aria-hidden="true">★★★★★</span>
-            <span>Nota <strong data-bind="googleRating">[X,X]</strong> no Google · <strong data-bind="googleReviews">[N]</strong> avaliações</span>
+            <strong>Nota 5,0 no Google</strong>
+            <span>· 26 avaliações</span>
           </div>
           <div class="hero__actions reveal">
-            <a class="btn btn--primary btn--large" data-whatsapp data-message="Olá! Vim pelo site e gostaria de agendar uma avaliação." href="https://wa.me/55XXXXXXXXXXX?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o.">Agendar pelo WhatsApp</a>
-            <a class="btn btn--ghost" href="#tratamentos">Conhecer tratamentos</a>
+            <a
+              class="btn btn--primary"
+              href="https://wa.me/5516999999999?text=Ol%C3%A1%21%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o."
+              target="_blank"
+              rel="noopener"
+              data-wa="general"
+            >Agendar avaliação no WhatsApp</a>
+            <a class="btn btn--ghost" href="#servicos">Conhecer os cuidados</a>
           </div>
+          <ul class="hero__points reveal" aria-label="Diferenciais">
+            <li>Atendimento humanizado</li>
+            <li>Avaliação individual</li>
+            <li>Cuidado responsável</li>
+          </ul>
         </div>
       </section>
 
-      <section class="treatment-strip" aria-label="Ir direto para um tratamento">
-        <a href="#limpeza-de-pele">Limpeza de Pele</a>
-        <a href="#tratamento-de-estrias">Estrias</a>
-        <a href="#botox">Botox</a>
-        <a href="#reducao-de-medidas">Redução de Medidas</a>
-        <a href="#drenagem">Drenagem</a>
-        <a href="#manicure">Manicure</a>
-      </section>
-
-      <section class="section treatments-section" id="tratamentos">
-        <div class="section__eyebrow">01 · Tratamentos</div>
-        <div class="section__head">
-          <h2 class="reveal">Cuidado escolhido com calma, clareza e avaliação individual.</h2>
-          <p class="section__lead reveal">Do facial ao corporal, cada protocolo começa com escuta e orientação responsável. Os benefícios abaixo ajudam você a encontrar o melhor ponto de partida para conversar com a equipe.</p>
-        </div>
-        <div class="treatment-grid" id="treatmentCards" data-dynamic="treatments"></div>
-        <div class="treatment-grid static-fallback">
-          <article class="treatment-card" id="limpeza-de-pele">
-            <span class="treatment-card__family">Facial</span>
-            <h3>Limpeza de Pele</h3>
-            <p>Pele renovada, limpa e com viço, com higienização profunda, extração e hidratação.</p>
-            <a data-whatsapp data-message="Olá! Gostaria de agendar uma limpeza de pele." href="https://wa.me/55XXXXXXXXXXX?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20limpeza%20de%20pele.">Agendar pelo WhatsApp →</a>
-          </article>
-          <article class="treatment-card" id="tratamento-de-estrias">
-            <span class="treatment-card__family">Corporal</span>
-            <h3>Tratamento de Estrias</h3>
-            <p>Protocolos para textura e aparência das estrias, sempre avaliados caso a caso.</p>
-            <a data-whatsapp data-message="Olá! Gostaria de agendar uma avaliação para tratamento de estrias." href="https://wa.me/55XXXXXXXXXXX?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%20para%20tratamento%20de%20estrias.">Agendar pelo WhatsApp →</a>
-          </article>
-          <article class="treatment-card" id="botox">
-            <span class="treatment-card__family">Injetáveis · médico</span>
-            <h3>Botox</h3>
-            <p>Toxina botulínica para suavizar linhas de expressão com naturalidade, mediante avaliação por profissional habilitado.</p>
-            <a data-whatsapp data-message="Olá! Gostaria de agendar uma avaliação para Botox." href="https://wa.me/55XXXXXXXXXXX?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%20para%20Botox.">Agendar pelo WhatsApp →</a>
-          </article>
-          <article class="treatment-card" id="reducao-de-medidas">
-            <span class="treatment-card__family">Corporal</span>
-            <h3>Redução de Medidas</h3>
-            <p>Protocolos corporais para modelar o contorno com acompanhamento, sem prometer números.</p>
-            <a data-whatsapp data-message="Olá! Gostaria de agendar uma avaliação para redução de medidas." href="https://wa.me/55XXXXXXXXXXX?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%20para%20redu%C3%A7%C3%A3o%20de%20medidas.">Agendar pelo WhatsApp →</a>
-          </article>
-          <article class="treatment-card" id="drenagem">
-            <span class="treatment-card__family">Corporal/Bem-estar</span>
-            <h3>Drenagem</h3>
-            <p>Drenagem linfática manual para sensação de leveza, circulação e relaxamento.</p>
-            <a data-whatsapp data-message="Olá! Gostaria de agendar uma drenagem." href="https://wa.me/55XXXXXXXXXXX?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20drenagem.">Agendar pelo WhatsApp →</a>
-          </article>
-          <article class="treatment-card" id="manicure">
-            <span class="treatment-card__family">Mãos</span>
-            <h3>Manicure</h3>
-            <p>O cuidado e o acabamento das unhas para fechar o ritual de autocuidado.</p>
-            <a data-whatsapp data-message="Olá! Gostaria de agendar manicure." href="https://wa.me/55XXXXXXXXXXX?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20manicure.">Agendar pelo WhatsApp →</a>
-          </article>
+      <section class="trust-strip" aria-label="Sinais de confiança">
+        <div class="trust-strip__inner">
+          <span>Nota 5,0 ★</span>
+          <span>26 avaliações no Google</span>
+          <span>Atendimento humanizado</span>
+          <span>Ribeirão Preto</span>
         </div>
       </section>
 
-      <section class="section social-section" id="depoimentos">
-        <div class="section__eyebrow">02 · Prova social</div>
-        <div class="split-head">
-          <div>
-            <h2 class="reveal">A confiança aparece nos detalhes do atendimento.</h2>
-            <p class="section__lead reveal">As avaliações reais do Google transformam reputação em segurança para quem está chegando pela primeira vez.</p>
-          </div>
-          <a class="rating-seal reveal" data-google-profile href="#" target="_blank" rel="noopener">
-            <span class="stars" aria-hidden="true">★★★★★</span>
-            <strong><span data-bind="googleRating">[X,X]</span> ★</strong>
-            <small><span data-bind="googleReviews">[N]</span> avaliações no Google</small>
-          </a>
+      <section class="section services" id="servicos" aria-labelledby="servicos-title">
+        <div class="section__head reveal">
+          <p class="kicker">Seção 01 · Cuidados</p>
+          <h2 id="servicos-title">Quando o incômodo já pede uma avaliação cuidadosa.</h2>
+          <p>
+            Cada atendimento começa pela escuta do seu caso. O plano é definido somente após avaliação individual,
+            com orientação clara e sem promessas de resultado.
+          </p>
         </div>
-        <div class="review-grid" id="reviewCards" data-dynamic="reviews"></div>
-        <div class="review-grid static-fallback">
-          <article class="review-card">
-            <span class="stars" aria-hidden="true">★★★★★</span>
-            <p>As avaliações reais do Google aparecerão aqui quando nota, textos e uso forem confirmados pela equipe.</p>
-            <strong>Google</strong>
-          </article>
-          <article class="review-card">
-            <span class="stars" aria-hidden="true">★★★★★</span>
-            <p>A curadoria preserva o sentido original do depoimento e mantém a comunicação responsável.</p>
-            <strong>Reputação</strong>
-          </article>
-          <article class="review-card">
-            <span class="stars" aria-hidden="true">★★★★★</span>
-            <p>O selo de nota e quantidade de avaliações fica em destaque para orientar a decisão de agendamento.</p>
-            <strong>Confiança</strong>
-          </article>
-        </div>
-      </section>
 
-      <section class="section results-section" id="resultados">
-        <div class="section__eyebrow">03 · Resultados com responsabilidade</div>
-        <div class="section__head section__head--narrow">
-          <h2 class="reveal">Uma galeria preparada para fotos reais, autorizadas e naturais.</h2>
-          <p class="section__lead reveal">Antes e depois só devem ser publicados com consentimento, sem edição que altere o resultado e com orientação de que cada pessoa responde de uma forma.</p>
-        </div>
-        <div class="gallery-grid" id="galleryGrid" data-dynamic="gallery"></div>
-        <div class="gallery-grid static-fallback">
-          <article class="gallery-placeholder">
-            <span>Limpeza de Pele</span>
-            <strong>Foto autorizada em breve</strong>
-          </article>
-          <article class="gallery-placeholder">
-            <span>Corporal</span>
-            <strong>Foto autorizada em breve</strong>
-          </article>
-          <article class="gallery-placeholder">
-            <span>Manicure</span>
-            <strong>Foto autorizada em breve</strong>
-          </article>
-        </div>
-        <p class="fine-print">Imagens reais devem ser publicadas com autorização. Resultados variam conforme cada caso. As informações deste site têm caráter informativo e todo procedimento é realizado mediante avaliação individual.</p>
-      </section>
-
-      <section class="section clinic-section" id="clinica">
-        <div class="clinic-layout">
-          <div class="clinic-copy">
-            <div class="section__eyebrow">04 · A Clínica</div>
-            <h2 class="reveal">Um refúgio para chegar, respirar e ser cuidada com atenção.</h2>
-            <p class="section__lead reveal">A My Éden nasce como um espaço de autocuidado em Ribeirão Preto: acolhedor no atendimento, criterioso na avaliação e sereno na condução de cada protocolo.</p>
-            <div class="trust-list">
-              <p><strong>Atendimento individual:</strong> a indicação de tratamento considera histórico, rotina, objetivos e segurança.</p>
-              <p><strong>Ambiente preparado:</strong> organização, higiene e privacidade fazem parte da experiência.</p>
-              <p><strong>Procedimentos injetáveis:</strong> realizados por profissional habilitado, mediante avaliação. Responsável técnico: <span data-bind="responsibleName">[CONFIRMAR nome]</span> · <span data-bind="responsibleRegistry">[CONFIRMAR registro]</span>.</p>
+        <div class="service-grid">
+          <article class="service-card reveal" data-service-card="limpeza-de-pele">
+            <div class="service-card__art">
+              <img
+                src="assets/img/services/limpeza-de-pele.webp?v=20260618-6"
+                alt="Cuidado facial de limpeza de pele"
+                loading="lazy"
+                data-service-image
+                data-service-fallback="assets/img/placeholder-facial.webp"
+              >
             </div>
-          </div>
-          <div class="clinic-images" aria-label="Imagens de ambiente e cuidado">
-            <figure class="clinic-image clinic-image--large reveal">
-              <img src="assets/img/about-ambiente.webp?v=20260617" alt="Sala de spa organizada e acolhedora">
-            </figure>
-            <figure class="clinic-image clinic-image--small reveal">
-              <img src="assets/img/about-cuidado.webp?v=20260617" alt="Ambiente de descanso com vista para jardim">
-            </figure>
-          </div>
+            <p class="service-card__tag">Cuidado facial · renovação</p>
+            <h3>Limpeza de Pele</h3>
+            <p class="service-card__problem">
+              Poros obstruídos, cravos e oleosidade podem deixar a pele com aparência cansada e textura irregular.
+            </p>
+            <p class="service-card__solution">
+              Higienização profunda e cuidado personalizado conforme as necessidades da sua pele.
+            </p>
+            <a
+              class="service-card__cta"
+              href="https://wa.me/5516999999999?text=Ol%C3%A1%21%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%20de%20limpeza%20de%20pele."
+              target="_blank"
+              rel="noopener"
+              data-wa-service="Limpeza de Pele"
+            >Agendar avaliação no WhatsApp →</a>
+          </article>
+
+          <article class="service-card reveal" data-service-card="tratamento-de-estrias">
+            <div class="service-card__art">
+              <img
+                src="assets/img/services/tratamento-de-estrias.webp?v=20260618-6"
+                alt="Cuidado estético para tratamento de estrias"
+                loading="lazy"
+                data-service-image
+                data-service-fallback="assets/img/placeholder-corporal.webp"
+              >
+            </div>
+            <p class="service-card__tag">Cuidado corporal · textura</p>
+            <h3>Tratamento de Estrias</h3>
+            <p class="service-card__problem">
+              Estrias podem afetar a uniformidade da pele e causar desconforto com a própria imagem.
+            </p>
+            <p class="service-card__solution">
+              Avaliação individual para definir o cuidado mais adequado à região e às características da pele.
+            </p>
+            <a
+              class="service-card__cta"
+              href="https://wa.me/5516999999999?text=Ol%C3%A1%21%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%20de%20tratamento%20de%20estrias."
+              target="_blank"
+              rel="noopener"
+              data-wa-service="Tratamento de Estrias"
+            >Agendar avaliação no WhatsApp →</a>
+          </article>
+
+          <article class="service-card reveal" data-service-card="botox">
+            <div class="service-card__art">
+              <img
+                src="assets/img/services/botox.webp?v=20260618-6"
+                alt="Procedimento médico estético com toxina botulínica"
+                loading="lazy"
+                data-service-image
+                data-service-fallback="assets/img/placeholder-bem-estar.webp"
+              >
+            </div>
+            <p class="service-card__tag">Estética facial · expressão</p>
+            <h3>Botox</h3>
+            <p class="service-card__problem">
+              Linhas de expressão podem se tornar mais marcadas e alterar a leveza da aparência.
+            </p>
+            <p class="service-card__solution">
+              Planejamento individual para suavizar linhas, preservando equilíbrio e naturalidade.
+            </p>
+            <p class="service-card__medical" data-service-medical>Procedimento médico (toxina botulínica) realizado por profissional habilitado.</p>
+            <a
+              class="service-card__cta"
+              href="https://wa.me/5516999999999?text=Ol%C3%A1%21%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%20de%20botox."
+              target="_blank"
+              rel="noopener"
+              data-wa-service="Botox"
+            >Agendar avaliação no WhatsApp →</a>
+          </article>
+
+          <article class="service-card reveal" data-service-card="reducao-de-medidas">
+            <div class="service-card__art">
+              <img
+                src="assets/img/services/reducao-de-medidas.webp?v=20260618-6"
+                alt="Cuidado corporal para redução de medidas"
+                loading="lazy"
+                data-service-image
+                data-service-fallback="assets/img/placeholder-corporal.webp"
+              >
+            </div>
+            <p class="service-card__tag">Cuidado corporal · contorno</p>
+            <h3>Redução de Medidas</h3>
+            <p class="service-card__problem">
+              Algumas regiões podem concentrar volume e incomodar mesmo com uma rotina de autocuidado.
+            </p>
+            <p class="service-card__solution">
+              Protocolo corporal definido após avaliação, respeitando objetivos e características individuais.
+            </p>
+            <a
+              class="service-card__cta"
+              href="https://wa.me/5516999999999?text=Ol%C3%A1%21%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%20de%20redu%C3%A7%C3%A3o%20de%20medidas."
+              target="_blank"
+              rel="noopener"
+              data-wa-service="Redução de Medidas"
+            >Agendar avaliação no WhatsApp →</a>
+          </article>
+
+          <article class="service-card reveal" data-service-card="drenagem">
+            <div class="service-card__art">
+              <img
+                src="assets/img/services/drenagem.webp?v=20260618-6"
+                alt="Cuidado corporal de drenagem"
+                loading="lazy"
+                data-service-image
+                data-service-fallback="assets/img/placeholder-bem-estar.webp"
+              >
+            </div>
+            <p class="service-card__tag">Bem-estar · leveza</p>
+            <h3>Drenagem</h3>
+            <p class="service-card__problem">
+              Inchaço e sensação de peso podem afetar o conforto e o bem-estar ao longo do dia.
+            </p>
+            <p class="service-card__solution">
+              Manobras delicadas e atendimento personalizado para promover relaxamento e sensação de leveza.
+            </p>
+            <a
+              class="service-card__cta"
+              href="https://wa.me/5516999999999?text=Ol%C3%A1%21%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%20de%20drenagem."
+              target="_blank"
+              rel="noopener"
+              data-wa-service="Drenagem"
+            >Agendar avaliação no WhatsApp →</a>
+          </article>
+
+          <article class="service-card reveal" data-service-card="manicure">
+            <div class="service-card__art">
+              <img
+                src="assets/img/services/manicure.webp?v=20260618-6"
+                alt="Cuidado profissional de manicure"
+                loading="lazy"
+                data-service-image
+                data-service-fallback="assets/img/placeholder-facial.webp"
+              >
+            </div>
+            <p class="service-card__tag">Beleza · cuidado das mãos</p>
+            <h3>Manicure</h3>
+            <p class="service-card__problem">
+              Unhas e cutículas bem cuidadas completam o visual e reservam um momento só seu.
+            </p>
+            <p class="service-card__solution">
+              Cuidado das mãos e unhas com acabamento delicado, higiene e atenção aos detalhes.
+            </p>
+            <a
+              class="service-card__cta"
+              href="https://wa.me/5516999999999?text=Ol%C3%A1%21%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio%20de%20manicure."
+              target="_blank"
+              rel="noopener"
+              data-wa-service="Manicure"
+            >Agendar avaliação no WhatsApp →</a>
+          </article>
         </div>
       </section>
 
-      <section class="experience-band" aria-label="A experiência My Éden">
-        <div>
-          <span>Conforto</span>
-          <p>Um tempo reservado para você.</p>
+      <section class="section reviews" id="avaliacoes" aria-labelledby="avaliacoes-title">
+        <div class="section__head reveal">
+          <p class="kicker">Seção 02 · Reputação</p>
+          <h2 id="avaliacoes-title">Confiança construída em cada atendimento.</h2>
+          <p>
+            O que dizem as clientes que já passaram pela My Éden.
+          </p>
         </div>
-        <div>
-          <span>Acolhimento</span>
-          <p>Escuta antes de qualquer indicação.</p>
+        <div class="reviews__summary reveal">
+          <div>
+            <span class="stars" aria-hidden="true">★★★★★</span>
+            <strong>5,0 no Google</strong>
+            <span>26 avaliações</span>
+          </div>
+          <a href="#" target="_blank" rel="noopener" data-google-link>Ver perfil no Google</a>
         </div>
-        <div>
-          <span>Segurança</span>
-          <p>Avaliação individual e conduta responsável.</p>
+        <div class="review-grid" data-reviews></div>
+      </section>
+
+      <section class="section results" id="resultados" aria-labelledby="resultados-title">
+        <div class="section__head reveal">
+          <p class="kicker">Seção 03 · Resultados</p>
+          <h2 id="resultados-title">Imagens somente com autorização e contexto.</h2>
+          <p>
+            Imagens reais, publicadas com autorização. Resultados variam conforme cada caso.
+          </p>
+        </div>
+
+        <div class="results__notice reveal">
+          As informações deste site têm caráter informativo. Todo procedimento é realizado mediante avaliação individual.
+          Resultados podem variar de pessoa para pessoa.
+        </div>
+
+        <div class="gallery-group reveal">
+          <div class="gallery-group__head">
+            <h3>Cuidados faciais e beleza</h3>
+            <p>Resultados apresentados com fotos naturais, contexto e sem promessa de resultado.</p>
+          </div>
+          <div class="gallery-grid" data-gallery="facial"></div>
+        </div>
+
+        <div class="gallery-group reveal">
+          <div class="gallery-group__head">
+            <h3>Cuidados corporais</h3>
+            <p>Exibição cautelosa, educativa e apenas com consentimento confirmado.</p>
+          </div>
+          <div class="gallery-grid" data-gallery="corporal"></div>
         </div>
       </section>
 
-      <section class="section location-section" id="localizacao">
-        <div class="section__eyebrow">05 · Localização e agendamento</div>
-        <div class="location-layout">
-          <div class="map-frame">
-            <iframe data-map-frame title="Mapa da My Éden Clínica Estética" src="https://www.google.com/maps?q=Ribeir%C3%A3o%20Preto%20SP&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-          </div>
-          <aside class="location-panel">
-            <h2>Agende sua avaliação</h2>
-            <p>Converse com a equipe pelo WhatsApp para confirmar horários, endereço e o tratamento mais indicado para o seu momento.</p>
-            <dl>
-              <div>
-                <dt>Endereço</dt>
-                <dd data-bind="address">[CONFIRMAR endereço em Ribeirão Preto]</dd>
-              </div>
-              <div>
-                <dt>Horário</dt>
-                <dd data-bind="hours">[CONFIRMAR horário]</dd>
-              </div>
-              <div>
-                <dt>Instagram</dt>
-                <dd><a data-instagram href="https://www.instagram.com/myedenrp/" target="_blank" rel="noopener">@myedenrp</a></dd>
-              </div>
-            </dl>
-            <a class="btn btn--primary btn--full" data-whatsapp data-message="Olá! Vim pelo site e gostaria de agendar." href="https://wa.me/55XXXXXXXXXXX?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar.">Agendar pelo WhatsApp</a>
-          </aside>
+      <section class="section about" id="sobre" aria-labelledby="sobre-title">
+        <div class="about__media reveal">
+          <img src="assets/img/sobre-consulta-delicada.webp" alt="Consulta em ambiente delicado e profissional">
+        </div>
+        <div class="about__copy reveal">
+          <p class="kicker">Seção 04 · Credibilidade</p>
+          <h2 id="sobre-title">Cuidado técnico, escuta e orientação individual.</h2>
+          <p>
+            My Éden reúne estética e beleza em Ribeirão Preto, unindo atendimento acolhedor, avaliação criteriosa
+            e orientação responsável para cada caso.
+          </p>
+          <dl class="credentials">
+            <div>
+              <dt>Atendimento</dt>
+              <dd data-profession>Individual e com hora marcada</dd>
+            </div>
+            <div>
+              <dt>Cuidado</dt>
+              <dd data-register>Avaliação criteriosa para cada caso</dd>
+            </div>
+            <div>
+              <dt>Onde</dt>
+              <dd data-experience>Ribeirão Preto · SP</dd>
+            </div>
+          </dl>
+          <a
+            class="btn btn--primary"
+            href="https://wa.me/5516999999999?text=Ol%C3%A1%21%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o."
+            target="_blank"
+            rel="noopener"
+            data-wa="general"
+          >Agendar avaliação no WhatsApp</a>
+        </div>
+      </section>
+
+      <section class="section location" id="localizacao" aria-labelledby="localizacao-title">
+        <div class="location__map reveal">
+          <iframe
+            title="Mapa de localização em Ribeirão Preto"
+            src="https://www.google.com/maps?q=Ribeir%C3%A3o%20Preto%2C%20SP&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            data-map
+          ></iframe>
+        </div>
+        <div class="location__panel reveal">
+          <p class="kicker">Seção 05 · Agendar</p>
+          <h2 id="localizacao-title">
+            <span class="location-title-line">Avaliação presencial</span>
+            <span class="location-title-line">em Ribeirão Preto.</span>
+          </h2>
+          <ul class="contact-list">
+            <li><span>WhatsApp</span><a href="tel:+5516999999999" data-phone-link>(16) 99999-9999</a></li>
+            <li><span>Instagram</span><a href="https://www.instagram.com/myedenrp/" target="_blank" rel="noopener" data-instagram>@myedenrp</a></li>
+            <li><span>Endereço</span><address data-address>Ribeirão Preto · SP</address></li>
+            <li><span>Horário</span><strong data-hours>Atendimento com hora marcada</strong></li>
+          </ul>
+          <a
+            class="btn btn--primary"
+            href="https://wa.me/5516999999999?text=Ol%C3%A1%21%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o."
+            target="_blank"
+            rel="noopener"
+            data-wa="general"
+          >Agendar avaliação no WhatsApp</a>
         </div>
       </section>
     </main>
 
-    <footer class="site-footer">
-      <div class="footer-brand">
-        <svg viewBox="0 0 120 80" aria-hidden="true">
-          <path d="M14 70 C24 42 45 20 74 9" />
-          <path d="M40 45 C24 39 18 26 20 10 C41 16 51 28 48 43" />
-          <path d="M67 27 C78 13 93 8 111 12 C101 30 86 37 70 32" />
-        </svg>
-        <strong>My Éden</strong>
-        <p>Seu refúgio de beleza e bem-estar.</p>
+    <footer class="footer">
+      <div class="footer__brand">
+        <strong data-brand-name>My Éden</strong>
+        <p>
+          Cuidados faciais, corporais e de beleza em Ribeirão Preto.
+        </p>
       </div>
-      <div class="footer-grid">
+      <div class="footer__grid">
         <div>
-          <h3>Atendimento</h3>
-          <p data-bind="address">[CONFIRMAR endereço em Ribeirão Preto]</p>
-          <p data-bind="hours">[CONFIRMAR horário]</p>
+          <h2>Atendimento</h2>
+          <p data-address>Ribeirão Preto · SP</p>
+          <p data-hours>Atendimento com hora marcada</p>
         </div>
         <div>
-          <h3>Contato</h3>
-          <p><a data-whatsapp data-message="Olá! Vim pelo site e gostaria de agendar." href="https://wa.me/55XXXXXXXXXXX?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar.">WhatsApp</a></p>
-          <p><a data-instagram href="https://www.instagram.com/myedenrp/" target="_blank" rel="noopener">@myedenrp</a></p>
+          <h2>Contato</h2>
+          <a href="tel:+5516999999999" data-phone-link>(16) 99999-9999</a>
+          <a href="https://www.instagram.com/myedenrp/" target="_blank" rel="noopener" data-instagram>@myedenrp</a>
         </div>
         <div>
-          <h3>Tratamentos</h3>
-          <p><a href="#tratamentos">Facial · Corporal · Injetáveis · Mãos</a></p>
-          <p><a href="#resultados">Resultados responsáveis</a></p>
+          <h2>Especialidades</h2>
+          <a href="#servicos">Limpeza de Pele</a>
+          <a href="#servicos">Tratamento de Estrias</a>
+          <a href="#servicos">Botox</a>
+          <a href="#servicos">Redução de Medidas</a>
+          <a href="#servicos">Drenagem</a>
+          <a href="#servicos">Manicure</a>
         </div>
       </div>
-      <p class="legal">As informações deste site têm caráter informativo. Todo procedimento é realizado mediante avaliação individual. Resultados podem variar de pessoa para pessoa.</p>
-      <div class="footer-bottom">
-        <span>© 2026 My Éden Clínica Estética</span>
-        <a href="assets/credits.json" target="_blank" rel="noopener">Créditos de imagens</a>
+      <p class="footer__disclaimer">
+        As informações deste site têm caráter informativo. Todo procedimento é realizado mediante avaliação individual.
+        Resultados podem variar de pessoa para pessoa.
+      </p>
+      <div class="footer__bottom">
+        <span>© 2026 · <span data-brand-name>My Éden</span></span>
+        <a href="assets/credits.json">Créditos de imagens</a>
         <a href="#topo">↑ Voltar ao topo</a>
       </div>
     </footer>
 
-    <a class="whatsapp-fab" data-fab data-whatsapp data-message="Olá! Vim pelo site e gostaria de agendar." href="https://wa.me/55XXXXXXXXXXX?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar." aria-label="Agendar pelo WhatsApp">
+    <a
+      class="whatsapp-fab"
+      href="https://wa.me/5516999999999?text=Ol%C3%A1%21%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o."
+      target="_blank"
+      rel="noopener"
+      aria-label="Agendar avaliação no WhatsApp"
+      data-wa="general"
+      data-fab
+    >
       <svg viewBox="0 0 32 32" aria-hidden="true">
-        <path d="M16 4a11.8 11.8 0 0 0-10.2 17.8L4.7 28l6.4-1.1A11.8 11.8 0 1 0 16 4Zm0 2.3a9.5 9.5 0 0 1 8.1 14.5 9.4 9.4 0 0 1-11.8 3.6l-.4-.2-3.9.7.7-3.8-.2-.4A9.5 9.5 0 0 1 16 6.3Zm-4.1 4.9c-.2 0-.5.1-.7.4-.4.4-1.2 1.2-1.2 2.8 0 1.7 1.2 3.3 1.3 3.5.2.2 2.3 3.7 5.8 5 2.9 1.1 3.5.9 4.1.8.6-.1 2-.8 2.3-1.6.3-.8.3-1.5.2-1.6-.1-.2-.3-.2-.7-.4l-2.4-1.2c-.3-.1-.6-.2-.8.2l-1.1 1.4c-.2.2-.4.3-.7.1-.4-.2-1.5-.6-2.8-1.7-1-1-1.7-2.1-1.9-2.5-.2-.3 0-.5.1-.7l.6-.7c.2-.2.2-.4.3-.6.1-.2 0-.4 0-.6l-1.1-2.5c-.3-.7-.6-.6-.8-.6h-.5Z" />
+        <path d="M16.02 4.2A11.65 11.65 0 0 0 6.1 21.98L4.6 27.8l5.96-1.44A11.66 11.66 0 1 0 16.02 4.2Zm0 2.12a9.54 9.54 0 0 1 8.1 14.6 9.48 9.48 0 0 1-11.02 3.36l-.4-.17-3.55.86.9-3.45-.2-.42A9.53 9.53 0 0 1 16.02 6.32Zm-3.68 4.78c-.22 0-.58.08-.88.4-.3.32-1.16 1.13-1.16 2.75 0 1.62 1.18 3.19 1.35 3.41.17.22 2.3 3.68 5.66 5.01 2.8 1.11 3.37.89 3.98.83.61-.06 1.97-.8 2.25-1.58.28-.78.28-1.45.2-1.59-.08-.14-.3-.22-.62-.38-.32-.16-1.9-.94-2.2-1.05-.3-.11-.52-.16-.74.16-.22.32-.85 1.05-1.04 1.27-.19.22-.38.25-.7.08-.32-.16-1.35-.5-2.57-1.59-.95-.85-1.6-1.9-1.78-2.22-.19-.32-.02-.49.14-.65.14-.14.32-.38.48-.57.16-.19.22-.32.32-.54.11-.22.05-.41-.03-.57-.08-.16-.72-1.78-1-2.43-.26-.63-.53-.54-.73-.55h-.62Z" />
       </svg>
-      <span>Agendar</span>
     </a>
+
+    <noscript>
+      <div class="noscript-note">
+        O site continua disponível sem JavaScript. Para agendar, use os botões de WhatsApp visíveis na página.
+      </div>
+    </noscript>
+
+    <script defer src="lib/gsap.min.js?v=20260618-3"></script>
+    <script defer src="lib/ScrollTrigger.min.js?v=20260618-3"></script>
+    <script defer src="lib/manifest.js?v=20260622"></script>
+    <script defer src="js/main.js?v=20260618-5"></script>
   </body>
 </html>
